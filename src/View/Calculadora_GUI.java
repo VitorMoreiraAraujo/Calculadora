@@ -38,6 +38,9 @@ public class Calculadora_GUI extends javax.swing.JFrame {
         FECHAR = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         RESU = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -46,14 +49,18 @@ public class Calculadora_GUI extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 102, 204));
         jPanel1.setLayout(null);
 
-        n2.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 14)); // NOI18N
+        n2.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24)); // NOI18N
+        n2.setForeground(new java.awt.Color(255, 162, 219));
         jPanel1.add(n2);
-        n2.setBounds(220, 50, 130, 40);
+        n2.setBounds(130, 60, 130, 40);
 
-        n1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 14)); // NOI18N
+        n1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24)); // NOI18N
+        n1.setForeground(new java.awt.Color(255, 162, 219));
         jPanel1.add(n1);
-        n1.setBounds(20, 50, 130, 40);
+        n1.setBounds(130, 10, 130, 40);
 
+        LIMPA.setBackground(new java.awt.Color(255, 162, 219));
+        LIMPA.setFont(new java.awt.Font("Lato", 1, 24)); // NOI18N
         LIMPA.setText("C");
         LIMPA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,8 +68,11 @@ public class Calculadora_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(LIMPA);
-        LIMPA.setBounds(310, 110, 50, 40);
+        LIMPA.setBounds(290, 130, 70, 70);
 
+        DIV.setBackground(new java.awt.Color(255, 255, 255));
+        DIV.setFont(new java.awt.Font("Lato", 1, 24)); // NOI18N
+        DIV.setForeground(new java.awt.Color(255, 102, 204));
         DIV.setText("/");
         DIV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,8 +80,11 @@ public class Calculadora_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(DIV);
-        DIV.setBounds(70, 110, 110, 40);
+        DIV.setBounds(10, 120, 120, 40);
 
+        SUB.setBackground(new java.awt.Color(255, 255, 255));
+        SUB.setFont(new java.awt.Font("Lato", 1, 24)); // NOI18N
+        SUB.setForeground(new java.awt.Color(255, 102, 204));
         SUB.setText("-");
         SUB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,8 +92,11 @@ public class Calculadora_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(SUB);
-        SUB.setBounds(70, 160, 110, 40);
+        SUB.setBounds(10, 170, 120, 40);
 
+        SOMA.setBackground(new java.awt.Color(255, 255, 255));
+        SOMA.setFont(new java.awt.Font("Lato", 1, 24)); // NOI18N
+        SOMA.setForeground(new java.awt.Color(255, 102, 204));
         SOMA.setText("+");
         SOMA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,8 +104,11 @@ public class Calculadora_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(SOMA);
-        SOMA.setBounds(200, 160, 100, 40);
+        SOMA.setBounds(140, 170, 120, 40);
 
+        MULT.setBackground(new java.awt.Color(255, 255, 255));
+        MULT.setFont(new java.awt.Font("Lato", 1, 24)); // NOI18N
+        MULT.setForeground(new java.awt.Color(255, 102, 204));
         MULT.setText("*");
         MULT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,8 +116,10 @@ public class Calculadora_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(MULT);
-        MULT.setBounds(200, 110, 100, 40);
+        MULT.setBounds(140, 120, 120, 40);
 
+        FECHAR.setBackground(new java.awt.Color(255, 162, 219));
+        FECHAR.setFont(new java.awt.Font("Lato", 1, 8)); // NOI18N
         FECHAR.setText("X");
         FECHAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,14 +127,31 @@ public class Calculadora_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(FECHAR);
-        FECHAR.setBounds(10, 10, 60, 30);
+        FECHAR.setBounds(300, 10, 50, 30);
 
         jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24)); // NOI18N
-        jLabel1.setText("Resultado:");
+        jLabel1.setText("2º número ");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(70, 230, 110, 30);
+        jLabel1.setBounds(10, 60, 110, 40);
+
+        RESU.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24)); // NOI18N
+        RESU.setForeground(new java.awt.Color(255, 162, 219));
         jPanel1.add(RESU);
-        RESU.setBounds(200, 230, 100, 30);
+        RESU.setBounds(10, 230, 250, 40);
+
+        jLabel2.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 36)); // NOI18N
+        jLabel2.setText("=");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(310, 230, 30, 40);
+
+        jLabel4.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24)); // NOI18N
+        jLabel4.setText("1º número ");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(10, 10, 110, 40);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/hello_kitty.jpg"))); // NOI18N
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(0, 0, 370, 280);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 370, 280);
@@ -190,6 +228,9 @@ public class Calculadora_GUI extends javax.swing.JFrame {
     public static javax.swing.JButton SOMA;
     public static javax.swing.JButton SUB;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     public static javax.swing.JTextField n1;
     public static javax.swing.JTextField n2;
